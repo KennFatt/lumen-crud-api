@@ -39,10 +39,10 @@ trait ApiResponder
      *
      * Status will be vary depends on the error / exception.
      *
-     * @param string $errorMessage  Exception / error message
-     * @param int $statusCode       HTTP status code
+     * @param string|array $errorMessage    Exception / error message. Either a string or array of string
+     * @param int $statusCode               HTTP status code
      */
-    public function responseError(string $errorMessage, int $statusCode): JsonResponse
+    public function responseError($errorMessage, int $statusCode): JsonResponse
     {
         return response()->json([
             "message" => $errorMessage
