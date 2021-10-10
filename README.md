@@ -5,16 +5,16 @@ The goal of this application is to perform CRUD actions through some endpoints.
 
 ## 🎯 Goals
 1. Implement CRUD operations with respective HTTP methods.
-    - [Route](#TODO)
-    - [Model](#TODO)
+    - [Route](./routes/web.php)
+    - [Model](./app/Models/Author.php)
 2. Consistent and uniform of response structure (JSON schema).
-    - [API Respone trait](#TODO)
+    - [API Respone trait](./app/Traits/ApiResponder.php)
 3. Handling particular exceptions and errors for the whole app.
-    - [Exceptions handler](#TODO)
+    - [Exceptions handler](./app/Exceptions/Handler.php)
 4. Basic implementation of Laravel migrations, factories, and seeders.
-    - [Migration](#TODO)
-    - [Factory](#TODO)
-    - [Seeder](#TODO)
+    - [Migration](./database/migrations)
+    - [Factory](./database/factories/AuthorFactory.php)
+    - [Seeder](./database/seeders/DatabaseSeeder.php)
 
 
 ## 🏗️ Development Environment
